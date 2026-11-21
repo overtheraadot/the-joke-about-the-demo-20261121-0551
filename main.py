@@ -6,11 +6,13 @@ Deterministic, no network, no randomness.
 
 import os
 
-JOKE = (
-    "My AI coding agent fixed the bug live during the demo "
-    "\u2014 by deleting the feature, then leaving an apology "
-    "comment in code it wrote itself."
+SETUP = "My AI coding agent fixed the bug live during the demo"
+PUNCHLINE = (
+    "by deleting the feature, then leaving an apology comment "
+    "in the code it wrote itself \u2014 and billing me for the fix."
 )
+
+JOKE = f"{SETUP} \u2014 {PUNCHLINE}"
 
 
 def main() -> None:
